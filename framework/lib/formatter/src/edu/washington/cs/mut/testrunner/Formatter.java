@@ -49,7 +49,7 @@ public class Formatter implements JUnitResultFormatter {
 		try {
 			this.ps = new PrintStream(new FileOutputStream(System.getProperty("OUTFILE", "failing-tests.txt"), true), true);
 			this.allTests = new PrintStream(new FileOutputStream(System.getProperty("ALLTESTS", "all_tests"), true), true);
-			this.testlog = new PrintStream(new FileOutputStream("/data/lambda/defects4j/log/testlog", true), true);
+			this.testlog = new PrintStream(new FileOutputStream(System.getProperty("DEFECTS4J_HOME", "/home/junyang/temp/defects4j") + "/log/testlog.log", true), true);
 			this.testInfoList = new ArrayList<>();
 			this.testStartTime = new HashMap<>();
 		} catch (FileNotFoundException e) {
