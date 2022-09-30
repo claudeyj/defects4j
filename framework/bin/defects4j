@@ -104,6 +104,15 @@ $cmd_descr{"mutation"}="run mutation analysis for a checked-out project version"
 
 =pod
 
+=item * L<B<mutate>|d4j::d4j-mutate/>
+
+just generate mutants for a checked-out project version.
+
+=cut
+$cmd_descr{"mutate"}="just generate mutants for a checked-out project version";
+
+=pod
+
 =item * L<B<coverage>|d4j::d4j-coverage/>
 
 run code coverage analysis for a checked-out project version.
